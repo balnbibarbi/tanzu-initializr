@@ -7,12 +7,6 @@ Our aspirations for this initiative are:
 - Achieve consistency across delivery teams, partners and clients
 - Expedite and automate the process of backlog creation
 
-### Internal Assets
-
-- [Tanzu Initializr Miro board](https://miro.com/app/board/o9J_krnGZ-o=/)
-- [TKG outcomes and capabilities doc](https://docs.google.com/document/d/1fsbVMqt03Et15nsQUDak6SfK9iI2XGVvbBm-tsqnwtY/edit#)
-- [TAS outcomes and capabilities doc](https://docs.google.com/document/d/1E0TPxRWr1iQfuX6F53PXzDbpQY7GqZx56pFQtCyHM5E/edit)
-
 ## User Stories
 
 ### TKG / K8s
