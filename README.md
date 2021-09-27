@@ -72,10 +72,10 @@ Our aspirations for this initiative are:
   - App developers can scale apps if they are running out of resource to continue to serve end users
 
 ### TAS 
-- [Infrastructure & Networking](tas/tas-day-1-infrastructure-networking.md) 
+- [Infrastructure & Networking](tas/infrastructure-networking.md) 
   - The platform team is ready to deploy new TAS foundations using manually configured compute, storage, and networking assets.<br />
   - The platform team is ready to pave the underlying infrastructure to support deployment of TAS foundations in an automated way for auditability, repeatability, recoverability, and survivability.  
-- [Foundation Deployment](tas/tas-day-1-tas-foundation-deployment.md)
+- [Foundation Deployment](tas/tas-foundation-deployment.md)
   - Platform Engineers can deploy a test app onto a TAS foundation
   - Platform Engineers can deploy a TAS foundation in an automated way for auditability, repeatability, recoverability, and survivability
   - Apps deployed on TAS can communicate with other applications on TAS in a trusted way so that apps with elevated data security requirements can run on TAS

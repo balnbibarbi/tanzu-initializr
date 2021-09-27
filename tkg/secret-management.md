@@ -128,3 +128,13 @@ L: secret management
 
 ---
 
+(moved from BBR) All secrets are encrypted at flight and at rest 
+
+**As an Infosec Engineer**  
+**I want** to ensure all secrets are encrypted at flight and at rest   
+**So that** any required secrets to run the backup are protected
+
+
+**Notes:**
+
+L: backup & recovery

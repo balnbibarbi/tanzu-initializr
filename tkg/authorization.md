@@ -1,50 +1,50 @@
-Model for how workloads are authorized to leverage the platform 
+Define a model for how workloads are authorized to leverage the platform 
 
 **As a Platform Engineer**  
-**I want** to be able to provide the security team a model for how workloads are authorized to leverage the platform  
-**So that** we can meet sec/compliance requirements.
+**I want** to define a model for how workloads are authorized to leverage the platform  
+**So that** the platform meets security and compliance requirements
 
 L: authorization
 
 ---
 
-To make my policy constraints accessible and known to my customers (dev teams) 
+Platform users understand what conformance is required in their workloads
 
 **As a Platform Engineer**  
-**I want** to make my policy constraints accessible and known to my customers (dev teams)    
+**I want** to make my policy constraints accessible and known to platform customers such as application dev teams    
 **So that** they can understand what conformance is required early on in their dev lifecycle
 
 L: authorization
 
 ---
 
-To place policy and constraints on the types of workoads that are allowed to execute in my cluster 
+To place policy and constraints on the types of workloads that are allowed to execute in my cluster 
 
-**As a Platform Engineer**  
-**I want** to place policy and constraints on the types of workoads that are allowed to execute in my cluster  
-**So that** my environment remains secure.
+**As a InfoSec Engineer**  
+**I want** to enforce policies and constraints on the types of workloads that are allowed to execute in each cluster  
+**So that** the platform remains secure
 
 
 L: authorization
 
 ---
 
-Appropriately build my application such that it is authorized to use the platform
+Workloads require the least amount of privileges to run on the platform
 
 **As an Application Developer**
 **I want** to understand how to appropriately build my application such that it will only attempt to use components of the platform that it needs
-**So that** my applications will run as expected while requiring the least amount of privileges to do so.
+**So that** my applications will run as expected while requiring the least amount of privileges to do so
 
 
 L: authorization
 
 ---
 
-A model for authorization that aligns with my platform tenancy model 
+An authorization model that aligns with the platform tenancy model 
 
 **As a Platform Engineer**  
 **I want** to provide a security model for authorization that aligns with my platform tenancy model   
-**So that** authorization to leverage Kubernetes resources is limited to minimum set of permissions appropriate groups/users/applications. 
+**So that** authorization to leverage Kubernetes resources is limited to minimum set of permissions, appropriate groups/users/applications. 
 
 
 L: authorization
@@ -65,18 +65,18 @@ Enforce node authorization
 
 **As a Platform Engineer / an Infosec Engineer**  
 **I want** to enforce node authorization   
-**So that** nodes can only access and manipulate resources that are scheduled the specific node.
+**So that** nodes can only access and manipulate resources that are scheduled the specific node
 
 
 L: authorization
 
 ---
 
-How apps gain access to external systems 
+Define how apps gain access to external systems 
 
 **As a Platform Engineer**  
 **I want** to define how apps gain access to external systems   
-**So that** workloads in k8s can access services outside of it in a secure, auditable manner.
+**So that** workloads on the platform can access services outside of it in a secure, auditable manner
 
 
 **Notes:**
@@ -89,7 +89,7 @@ Define workload-to-workload authorization
 
 **As a Platform Engineer**  
 **I want** a mechanism to define workload-to-workload authorization    
-**So that** I may enforce workload tenancy.
+**So that** I may enforce workload tenancy
 
 
 **Notes:**
