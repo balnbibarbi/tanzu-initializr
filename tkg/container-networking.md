@@ -87,9 +87,6 @@ Service scalability and stability with Kubernetes service routing 
 **I want** to service scalability and stability with Kubernetes service routing    
 **So that** over time I can scale my cluster up and have O(1) time resolution when resolving IPs underlying services
 
-
-**Notes:**
-
 L: Container Networking
 
 ---
@@ -100,9 +97,6 @@ Determine if and where network policies are required
 **I want** to determine if and where network policies are required   
 **So that** I can meet any applicable compliance or practical network security measures
 
-
-**Notes:**
-
 L: Container Networking
 
 ---
@@ -112,9 +106,6 @@ Use the correct network policy API (Kubernetes API vs CNI-Plugin CRDs)
 **As a Platform Engineer**  
 **I want** to use the correct network policy API (Kubernetes API vs CNI-Plugin CRDs)  
 **So that** I can balance feature sets with portability of policy
-
-
-**Notes:**
 
 L: Container Networking
 
