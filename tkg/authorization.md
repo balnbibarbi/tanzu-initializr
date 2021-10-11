@@ -78,9 +78,6 @@ Define how apps gain access to external systems
 **I want** to define how apps gain access to external systems   
 **So that** workloads on the platform can access services outside of it in a secure, auditable manner
 
-
-**Notes:**
-
 L: authorization
 
 ---
@@ -91,8 +88,6 @@ Define workload-to-workload authorization
 **I want** a mechanism to define workload-to-workload authorization    
 **So that** I may enforce workload tenancy
 
-
-**Notes:**
 
 L: authorization
 

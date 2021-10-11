@@ -21,7 +21,7 @@ L: Storage integrations
 
 ---
 
-To provide multiple levels of storage consumption
+Provide multiple levels of storage consumption
 
 **As a Platform Engineer**  
 **I want** to provide multiple levels of storage consumption  
@@ -31,10 +31,10 @@ L: Storage integrations
 
 ---
 
-To provide volumes to workloads 
+Provide persistent volumes to workloads 
 
 **As Application Developer**
-**I want** to provide volumes to workloads on a cluster
+**I want** to provide persistent volumes to workloads on a cluster
 **So that** data can be persisted across restarts
 
 ### Acceptance Criteria
@@ -49,3 +49,15 @@ Then it returns an object
 
 L: Storage integrations
 
+---
+
+Encrypt data in persistent volumes
+
+**As Application Developer**  
+**I want** to have the application data stored in persistent volumes  encrypted
+**So that** any private information and sensitive data are protected
+
+**Notes:**
+- Assess storage encryption options first and decide what works best for app teams (cost-benefit analysis)
+
+L: Storage integrations

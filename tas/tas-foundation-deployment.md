@@ -41,7 +41,7 @@ L: tas foundation deployment
 
 ---
 
-[feature] [Spike] Determine what Tiles will be installed
+[feature] Determine what Tiles will be installed
 
 null
 

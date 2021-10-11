@@ -1,13 +1,14 @@
 
 ## What is Tanzu Initializr?
 
-Tanzu Initializr is a library epics and user stories for [Tanzu Application Service](https://docs.pivotal.io/application-service/) and Kubernetes-based application platforms such as [Tanzu Kubernetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html).
+Tanzu Initializr is a library epics and user stories application platforms on for Kubernetes such as [Tanzu Kubernetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html) and [Tanzu Application Service](https://docs.pivotal.io/application-service/). 
 
 Our aspirations for this initiative are:	
 - Achieve consistency across delivery teams, partners and clients
 - Expedite and automate the process of backlog creation
 
-## User Stories
+## Epics, Desired Outcomes
+Click on each epic to see the backlog of user stories
 
 ### TKG / K8s
 - [Infra & Networking](./tkg/infra-networking.md)
@@ -97,3 +98,5 @@ Our aspirations for this initiative are:
 - Developers Self-service
 - Application Onboarding
 
+
+### Platform Reliability Engineering
