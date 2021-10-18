@@ -18,7 +18,7 @@ L: workload onboarding
 
 ---
 
-[Spike] determine the right abstraction of Kubernetes for platform users 
+(Spike) determine the right abstraction of Kubernetes for platform users 
 
 **As an Application Developer**
 **I want** certain platform concerns abstracted away 

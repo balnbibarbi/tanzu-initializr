@@ -1,4 +1,4 @@
-[Spike] Should pods be routable in the environment 
+(Spike) Should pods be routable in the environment 
 
 **As a Network Admin**  
 **I want** to assess whether routable pods makes sense in my environment   
@@ -8,7 +8,7 @@ L: Container Networking
 
 ---
 
-[Spike] Determine appropriate routing protocols (VXLAN/Native/IP-in-IP) to select the right CNI-plugin  
+(Spike) Determine appropriate routing protocols (VXLAN/Native/IP-in-IP) to select the right CNI-plugin  
 
 **As a Network Admin**  
 **I want** to determine appropriate routing protocols (VXLAN/Native/IP-in-IP)   
@@ -31,11 +31,11 @@ L: Container Networking
 
 ---
 
-Access pods from external services 
+Access pods from outside
 
 **As a Platform Engineer**  
 **I want** to make pods network routable   
-**So that** I can access pod directly from external services
+**So that** workloads inside the cluster can be accessed from outside the cluster
 
 L: Container Networking
 

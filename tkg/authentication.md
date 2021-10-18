@@ -1,4 +1,4 @@
-[Spike] Define the workload authentication model
+(Spike) Define the workload authentication model
 
 ### Why
 A secure model is defined and implemented for workloads to gain access to internal and external systems  
@@ -67,7 +67,7 @@ L: Authentication
 ---
 
 Securely connect to external/off-platform services 
-**As a Platform Engineer/App Developer**  
+**As a Platform Engineer/Application Developer**  
 **I want** to provide a mechanism for connecting to external services with the least privileges  
 **So that** the access is secure and authenticated 
 

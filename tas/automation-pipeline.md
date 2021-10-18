@@ -1,6 +1,6 @@
 Deploy Concourse Manually
 
-**AS A Platform Engineer**  
+**As a Platform Engineer**  
 **I want** to setup concourse using the Control Plane Bosh director
 **So that** I can create platform automation pipelines
 
@@ -18,8 +18,8 @@ L: platform automation, concourse
 
 Deploy Concourse via BOSH toolchain
 
-**AS a Platform Engineer**
-**I want** to build an automated Concourse deployment script
+**As a Platform Engineer**  
+**I want** to build an automated Concourse deployment script  
 **So that** we can easily deploy concourse for future pipelines and automation
 
 *Notes:*  
@@ -53,7 +53,7 @@ L: platform automation
 
 Unify platform pipelines into one (as many as possible)
 
-**As A platform engineer**  
+**As A Platform Engineer**  
 **I want** to unify as many pipelines as possible into one  
 **So that** I can better manage the automation pipelines
 
@@ -63,7 +63,7 @@ L: platform automation, concourse
 
 Rework platform automation pipeline and templatize with vars
 
-**As a platform engineer**  
+**As a Platform Engineer**  
 **I want** to templatize my automation pipeline  
 **So that** they could be re-used in other foundations by changing their variables 
 ### Acceptance Criteria

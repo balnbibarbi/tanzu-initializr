@@ -1,10 +1,10 @@
-[feature] Manually Install RabbitMQ
+Install RabbitMQ
 
-**AS AN** Application Developer
-**I NEED** the RabbitMQ tile to be installed in '-----' Environment
-**SO THAT** it can be bound to my application
+**As an Application Developer**  
+**I want** the RabbitMQ tile to be installed in '-----' Environment  
+**So that** it can be bound to my application
 
-**AC:**
+**Acceptance Criteria:**
  - RabbitMQ tile is available in OPS MAN
  - Tile is Green
  - OPS Man deploy is successful
@@ -13,13 +13,13 @@ L: data services
 
 ---
 
-[feature] Manually Install Spring Cloud Services
+Manually Install Spring Cloud Services
 
-**AS A** Platform Engineer
-**I NEED** to install Spring Cloud Services in '-----' Environment
-**SO THAT** we can easily use Spring Cloud Services in our applications
+**As a Platform Engineer**  
+**I want** to install Spring Cloud Services in '-----' Environment  
+**So that** we can easily use Spring Cloud Services in our applications
 
-**AC:**
+**Acceptance Criteria:**
  - Spring Cloud Services tile is available in OPS MAN
  - Tile is Green
  - OPS man deploy is successful
@@ -28,13 +28,13 @@ L: data services
 
 ---
 
-[feature] Manually Install MySQLv2
+Manually Install MySQLv2
 
-**AS AN** Application Developer
-**I NEED** the MySQLv2 tile to be installed in '-----' Environment
-**SO THAT** it can be bound to my application
+**As an Application Developer**  
+**I want** the MySQLv2 tile to be installed in '-----' Environment  
+**So that** it can be bound to my application
 
-**AC:**
+**Acceptance Criteria:**
  - MySQLv2 tile is available in OPS MAN
  - Tile is Green
  - OPS man deploy is successful
@@ -48,13 +48,13 @@ L: data services
 
 ---
 
-[feature] Manually Install Redis
+Manually Install Redis
 
-**AS AN** Application Developer
-**I NEED** the Redis tile to be installed in '-----' Environment
-**SO THAT** it can be bound to my application
+**As an Application Developer**  
+**I want** the Redis tile to be installed in '-----' Environment  
+**So that** it can be bound to my application
 
-**AC:**
+**Acceptance Criteria:**
  - Redis tile is available in OPS MAN
  - Tile is Green
  - OPS Man deploy is successful

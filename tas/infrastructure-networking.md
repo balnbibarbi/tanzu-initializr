@@ -18,9 +18,9 @@ L: infrastructure & networking
 ---
 Configure DNS & Load Balancers to round-robin traffic to goRouters
 
-**AS A** Platform engineer
-**I NEED** the Isolation Segment DNS & Load Balancers to be configured
-**SO THAT** I can install Isolation Segments
+**As a Platform Engineer**
+**I want** the Isolation Segment DNS & Load Balancers to be configured
+**So that** I can install Isolation Segments
 
 **Acceptance Criteria**  
 ```
@@ -37,9 +37,9 @@ L: infrastructure & networking
 
 Manage multiple foundations by setting up a control plane
 
-**AS A** Platform engineer
-**I NEED** set up a control plane
-**SO THAT** I can manage multiple foundations
+**As a Platform Engineer**
+**I want** set up a control plane
+**So that** I can manage multiple foundations
 
 **Acceptance Criteria**  
 ```
@@ -65,9 +65,9 @@ L: infrastructure & networking
 
 Set system-wide proxy on Jumpbox
 
-**AS A** Platform Engineer
-**I NEED** the Jumpbox to send traffic through the proxy
-**SO THAT** I can properly access the internet
+**As a Platform Engineer**
+**I want** the Jumpbox to send traffic through the proxy
+**So that** I can properly access the internet
 
 **Acceptance Criteria**
 ```
@@ -101,11 +101,11 @@ L: infrastructure & networking
 
 Create a jumpbox
 
-**AS A/AN** Platform Engineer
-**I NEED** a jumpbox 
-**SO THAT** I can speed up operation activities securely
+**As a Platform Engineer**
+**I want** a jumpbox 
+**So that** I can speed up operation activities securely
 
-**AC:**
+**Acceptance Criteria:**
  - Ubuntu server built and accessible in '---' vcenter with internet access.
 
 L: infrastructure & networking
@@ -114,7 +114,7 @@ L: infrastructure & networking
 
 Configure jumpbox to use direnv
 
-**As platform engineer**  
+**As Platform Engineer**  
 **I want** my environment config to be automatic when I change directories in the jumpbox  
 **So that** it is easier and less error prone to change foundations
 

@@ -21,14 +21,14 @@ Click on each epic to see the backlog of user stories
   - Platform engineers have secured Kubernetes Runtime for workloads
   - Platform engineers can optimize Kubernetes Runtime for workloads
     Container images optimized for speed
-  - App developers can containerize VMs that are not easy to refactor or the app is not easy to containerize
+  - Application developers can containerize VMs that are not easy to refactor or the app is not easy to containerize
   - Container runtimes have the appropriate resources scheduled and available
 - [Storage Integration](./tkg/storage-integration.md)
-  - App developers have one or more persistent storage solutions for their workloads	
+  - Application developers have one or more persistent storage solutions for their workloads	
   - Persistent volumes can be life cycle managed, dynamically created and expanded
-  - App developers understand the availability of persistent volumes
+  - Application developers understand the availability of persistent volumes
   - Access to persistent volumes is controlled and done in a secure fashion	
-  - App developers can monitor how much storage is being used by their workloads 
+  - Application developers can monitor how much storage is being used by their workloads 
 - [Authentication](tkg/authentication.md)
   - A secure model is defined and implemented for workloads to gain access to internal and external systems
   - Users and system accounts are able to leverage a unique identity to successfully access the cluster
@@ -41,9 +41,9 @@ Click on each epic to see the backlog of user stories
   - Platform engineers can correct issues and maintain the platform running (alerting and dashboard)	
   - Platform users share the same understanding around the availability of the platform
   - InfoSec can monitor the platform to ensure all actions on the platform are taken by the right actors
-  - App developers have complete visibility into all running workload on the platform
+  - Application developers have complete visibility into all running workload on the platform
   - Developers can perform distributed tracing in their applications
-  - App developers are enabled to troubleshoot production issues in real time
+  - Application developers are enabled to troubleshoot production issues in real time
 - [Secret Management](tkg/secret-management.md)
   - Secrets used for platform management and workloads are managed securely and efficiently
   - Sensitive data and traffic are encrypted and authenticated using  SSL certificates	
@@ -70,17 +70,17 @@ Click on each epic to see the backlog of user stories
 - [Workload Onboarding](tkg/workload-onboarding.md)
   - Application developers can create consistent clusters on-demand for their workloads
   - Developers have the ability to manage their apps in their own workspace	
-  - App developers can scale apps if they are running out of resource to continue to serve end users
+  - Application developers can scale apps if they are running out of resource to continue to serve end users
 
 ### TAS 
 - [Infrastructure & Networking](tas/infrastructure-networking.md) 
   - The platform team is ready to deploy new TAS foundations using manually configured compute, storage, and networking assets.<br />
   - The platform team is ready to pave the underlying infrastructure to support deployment of TAS foundations in an automated way for auditability, repeatability, recoverability, and survivability.  
 - [Foundation Deployment](tas/tas-foundation-deployment.md)
-  - Platform Engineers can deploy a test app onto a TAS foundation
-  - Platform Engineers can deploy a TAS foundation in an automated way for auditability, repeatability, recoverability, and survivability
+  - Platform engineers can deploy a test app onto a TAS foundation
+  - Platform engineers can deploy a TAS foundation in an automated way for auditability, repeatability, recoverability, and survivability
   - Apps deployed on TAS can communicate with other applications on TAS in a trusted way so that apps with elevated data security requirements can run on TAS
-  - Platform Engineers can scale and tune-up TAS platforms to better serve the needs of application developers
+  - Platform engineers can scale and tune-up TAS platforms to better serve the needs of application developers
 - [Platform Automation](#)
 - [Compliance & InfoSec](#)
   - Platform is hardened and all controls and processes are in place to conform to enterprise security policy and audit standards
