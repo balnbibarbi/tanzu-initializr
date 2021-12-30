@@ -3,7 +3,7 @@
 
 Tanzu Initializr is a library of building blocks and user stories for modern application platforms such as [Tanzu Kubernetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html) and [Tanzu Application Service](https://docs.pivotal.io/application-service/). 
 
-Our aspirations for this initiative are:	
+The aspirations for this initiative are:	
 - Expedite and automate the process of backlog creation for platform teams
 - Achieve consistency across VMware Tanzu Labs delivery teams, our partners and clients
 
