@@ -1,13 +1,31 @@
 
-## What is Tanzu Initializr?
+# Tanzu Initializr
 
-Tanzu Initializr is a library of building blocks and user stories for modern application platforms such as [Tanzu Kubernetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html) and [Tanzu Application Service](https://docs.pivotal.io/application-service/). 
+Tanzu Initializr is a library of user stories for modern application platforms such as [Tanzu Kubernetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html) and [Tanzu Application Service](https://docs.pivotal.io/application-service/). 
 
 The aspirations for this initiative are:	
 - Expedite and automate the process of backlog creation for platform teams
 - Achieve consistency across VMware Tanzu Labs delivery teams, our partners and clients
 
+## Export user stories via Prolific
 
+The user stories in this repo are formatted in markdown and work with [Prolific](https://github.com/onsi/prolific). It converts each markdown down into a to CSV. The CVS file can be done imported into a Pivotal Tracker project via [Prolific-Importer](https://github.com/sneal/prolific-importer#installation)
+
+**Convert to CSV**  
+```bash
+prolific path/to/stories.md > path/to/stories.csv
+```
+
+**Import to Tracker** 
+```bash
+prolific-importer [API_TOKEN] [PROJECT_ID] path/to/stories.csv
+```
+**Or simply combine both commands**
+```
+prolific path/to/stories.prolific | prolific-importer [API_TOKEN] [PROJECT_ID]
+```
+
+## Templated Backlogs
 Click on each epic to see the backlog of user stories.
 
 ### Tanzu Kubernetes Grid (TKG)
