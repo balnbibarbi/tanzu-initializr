@@ -75,13 +75,13 @@ Click on each epic to see the backlog of user stories.
 ### Platform Governance / SRE / Day 2 Ops
 - [Service Level Objectives](sre/service-level-objectives.md)
 - [Business Continuity](sre/business-continuty.md)
-- Proactive Monitoring
+- [Proactive Monitoring](sre/proactive-monitoring.md)
 - [Platform Update Engine / Release Process](sre/release-process.md)
 - [Automation & Self Service](sre/self-service.md)
-- Performance Optimization
+- [Performance Optimization](sre/performance-optimization.md)
 - [Emergency Response](sre/emergency-response.md)
 - [Capacity Planning](sre/capacity-load-mgmt.md)
 - [Platform as a Product](sre/platform-as-a-product.md)
 - [Balanced Product Team](sre/balanced-team.md)
-- Path to Production
-- DevOps Culture
+- [Path to Production](sre/path-to-prod.md)
+- [DevOps Culture](sre/path-to-prod.md)
