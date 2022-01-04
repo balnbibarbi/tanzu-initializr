@@ -9,7 +9,7 @@ The aspirations for this initiative are:
 
 ## Export user stories via Prolific
 
-The user stories in this repo are formatted in markdown and work with [Prolific](https://github.com/onsi/prolific). It converts each markdown down into a to CSV. The CVS file can be done imported into a Pivotal Tracker project via [Prolific-Importer](https://github.com/sneal/prolific-importer#installation)
+The user stories in this repo are formatted in markdown and work with [Prolific](https://github.com/onsi/prolific). The Prolific tool converts each markdown to a to CSV file. The CVS file can be then imported into a Pivotal Tracker project via [Prolific-Importer](https://github.com/sneal/prolific-importer#installation)
 
 **Convert to CSV**  
 ```bash
@@ -25,7 +25,7 @@ prolific-importer [API_TOKEN] [PROJECT_ID] path/to/stories.csv
 prolific path/to/stories.prolific | prolific-importer [API_TOKEN] [PROJECT_ID]
 ```
 
-## Templated Backlogs
+## Templated Backlogs of User Stories
 Click on each epic to see the backlog of user stories.
 
 ### Tanzu Kubernetes Grid (TKG)
