@@ -4,10 +4,12 @@ Install RabbitMQ
 **I want** the RabbitMQ tile to be installed in '-----' Environment  
 **So that** it can be bound to my application
 
-**Acceptance Criteria:**
- - RabbitMQ tile is available in OPS MAN
- - Tile is Green
- - OPS Man deploy is successful
+### Acceptance Criteria: 
+```gherkin
+- RabbitMQ tile is available in OPS MAN
+- Tile is Green
+- OPS Man deploy is successful
+```
 
 L: data services
 
@@ -19,10 +21,12 @@ Manually Install Spring Cloud Services
 **I want** to install Spring Cloud Services in '-----' Environment  
 **So that** we can easily use Spring Cloud Services in our applications
 
-**Acceptance Criteria:**
- - Spring Cloud Services tile is available in OPS MAN
- - Tile is Green
- - OPS man deploy is successful
+### Acceptance Criteria: 
+```gherkin
+- Spring Cloud Services tile is available in OPS MAN
+- Tile is Green
+- OPS man deploy is successful
+```
 
 L: data services
 
@@ -34,11 +38,12 @@ Manually Install MySQLv2
 **I want** the MySQLv2 tile to be installed in '-----' Environment  
 **So that** it can be bound to my application
 
-**Acceptance Criteria:**
- - MySQLv2 tile is available in OPS MAN
- - Tile is Green
- - OPS man deploy is successful
-
+### Acceptance Criteria: 
+```gherkin
+- MySQLv2 tile is available in OPS MAN
+- Tile is Green
+- OPS man deploy is successful
+```
 
 MySQLv2 is only needed for:
 - Spring Cloud Service V2
@@ -54,10 +59,12 @@ Manually Install Redis
 **I want** the Redis tile to be installed in '-----' Environment  
 **So that** it can be bound to my application
 
-**Acceptance Criteria:**
- - Redis tile is available in OPS MAN
- - Tile is Green
- - OPS Man deploy is successful
+### Acceptance Criteria: 
+```gherkin
+- Redis tile is available in OPS MAN
+- Tile is Green
+- OPS Man deploy is successful
+```
 
 L: data services
 

@@ -24,10 +24,10 @@ Install Healthwatch
 **I want** to install Healthwatch in '-----' Environment
 **So that** I can monitor the health of the platform
 
-**Acceptance Criteria:**
+### Acceptance Criteria: 
 ```gherkin
- - The Healthwatch app is in the system space
- - Healthwatch is accessible through the web UI
+- The Healthwatch app is in the system space
+- Healthwatch is accessible through the web UI
 ```
 
 L: platform observability
@@ -69,7 +69,7 @@ Docs:
 - https://docs.pivotal.io/healthwatch/2-1/configuring/optional-config/alerting.html
 
 
-**Acceptance Criteria:**
+### Acceptance Criteria: 
 ```gherkin
 When Bosh Director is down
 Then Receive an email alert

@@ -22,8 +22,8 @@ Configure DNS & Load Balancers to round-robin traffic to goRouters
 **I want** the Isolation Segment DNS & Load Balancers to be configured
 **So that** I can install Isolation Segments
 
-**Acceptance Criteria**  
-```
+### Acceptance Criteria: 
+```gherkin
 - Smoke tests pass
 - Test application is available
 ```
@@ -41,8 +41,8 @@ Manage multiple foundations by setting up a control plane
 **I want** set up a control plane
 **So that** I can manage multiple foundations
 
-**Acceptance Criteria**  
-```
+### Acceptance Criteria: 
+```gherkin
 OpsMgr from the control plane is accessible
 ```
 
@@ -69,8 +69,8 @@ Set system-wide proxy on Jumpbox
 **I want** the Jumpbox to send traffic through the proxy
 **So that** I can properly access the internet
 
-**Acceptance Criteria**
-```
+### Acceptance Criteria: 
+```gherkin
 - Jumpbox user can access internet
 - Root user can access internet
 - Sudo command can access internet
@@ -105,8 +105,10 @@ Create a jumpbox
 **I want** a jumpbox 
 **So that** I can speed up operation activities securely
 
-**Acceptance Criteria:**
+### Acceptance Criteria: 
+```gherkin
  - Ubuntu server built and accessible in '---' vcenter with internet access.
+```
 
 L: infrastructure & networking
 
@@ -118,7 +120,7 @@ Configure jumpbox to use direnv
 **I want** my environment config to be automatic when I change directories in the jumpbox  
 **So that** it is easier and less error prone to change foundations
 
-**Acceptance Criteria**
+### Acceptance Criteria: 
 ```gherkin
 Scenario:
 Given separate environments in the jumpbox

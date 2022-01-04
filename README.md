@@ -37,22 +37,20 @@ Click on each item to see the backlog of user stories
 ### Tanzu Application Service (TAS) 
 - [Infrastructure & Networking](tas/infrastructure-networking.md) 
 - [TAS Foundation Deployment](tas/tas-foundation-deployment.md)
-- [Platform Services](#)
-- [Platform Pipeline Automation](#)
-- [Platform Observability](#)
-- [Application Observability](#)
-- [Platform Authentication](#)
-- [Application Authentication](#)
-- [Platform Lifecycle](#)
-- [Secret Management](#)
-- [Backup and Restore](#)
-- [Application Onboarding](#)
-- [Windows Workloads](#)
-- [Developers Self-service](#)
-- [Compliance & InfoSec](#)
+- [Platform Services](tas/platform-services.md)
+- [Platform Pipeline Automation](tas/automation-pipeline.md)
+- [Platform Observability](tas/observability.md)
+- [Application Observability](tas/observability.md)
+- [Platform Authentication](tas/platform-authentication.md)
+- [Application Authentication](tas/application-authentication.md)
+- [Platform Lifecycle](tas/platform-lifecycle.md)
+- [Secret Management](tas/secret-management.md)
+- [Backup and Restore](tas/backup-restore.md)
+- Application Onboarding
+- [Windows Workloads](tas/windows-workloads.md)
+- Developers Self-service
+- [Compliance & InfoSec](tas/security-compliance.md)
 - [Platform High Availability](#)
-
-
 
 
 ### Platform Reliability Engineering

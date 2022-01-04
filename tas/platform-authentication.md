@@ -12,7 +12,7 @@ Integrate OpsManager Auth with an IdP (e.g. LDAP)
 **I want** to use my AD account to login to OpsManager  
 **So that** all users/access levels can be managed centrally
 
-**Acceptance Criteria**
+### Acceptance Criteria: 
 ```gherkin
 Scenario:
 Given the ops manager 
@@ -34,7 +34,7 @@ To integrate App Manager with an IdP (e.g. LDAP)
 **I want** to use my AD account to login Apps Manager
 **So that** all users/access levels can be managed centrally
 
-**Acceptance Criteria**
+### Acceptance Criteria: 
 ```gherkin
 Scenario: 
 Given the app manager
@@ -50,7 +50,7 @@ Integrate OpsManager Auth with an IdP (e.g. LDAP) using Automation
 **I want** to automate the process of integrating OpsManager with my LDAP provider  
 **So that** I can login using my AD account in every new instances of Ops Manager
 
-**Acceptance Criteria**
+### Acceptance Criteria: 
 ```gherkin
 Given A new Ops Manager
 When I run my automation pipeline
