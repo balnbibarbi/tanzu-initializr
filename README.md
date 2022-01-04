@@ -21,7 +21,7 @@ prolific path/to/stories.md > path/to/stories.csv
 prolific-importer [API_TOKEN] [PROJECT_ID] path/to/stories.csv
 ```
 **Or simply combine both commands**
-```
+```bash
 prolific path/to/stories.prolific | prolific-importer [API_TOKEN] [PROJECT_ID]
 ```
 
@@ -29,29 +29,27 @@ prolific path/to/stories.prolific | prolific-importer [API_TOKEN] [PROJECT_ID]
 Click on each epic to see the backlog of user stories.
 
 ### Tanzu Kubernetes Grid (TKG)
-#### Kubernetes Dial-tone:
-- [Infra & Networking](./tkg/infra-networking.md)
-- [Cluster Deployment](./tkg/cluster-deployment.md)
-
-#### Kubernetes Platform:
-- [Storage Integration](./tkg/storage-integration.md)
-- [Container Runtime](tkg/runtime.md)
-- [Container Networking](tkg/container-networking.md)
-- [Service Routing](tkg/service-routing.md)
-- [Platform Lifecycle](tkg/platform-lifecycle.md)
-- [Authentication](tkg/authentication.md)
-- [Secret Management](tkg/secret-management.md)
-- [Platform Observability](tkg/observability.md)
-- [Backup & Recovery](/tkg/backup-recovery.md)
-- [Authorization](tkg/authorization.md)
-
-#### Application Platform
-- [Backup & Recovery](/tkg/backup-recovery.md)
-- [Workload Onboarding](tkg/workload-onboarding.md)
-- [Authorization](tkg/authorization.md)
-- [Workload Tenancy](tkg/workload-tenancy.md)
-- [Application Observability](tkg/observability.md)
-- [Automated Build and Deploy](tkg/automated-build-deploy.md)
+- #### Kubernetes Dial-tone:
+  - [Infra & Networking](./tkg/infra-networking.md)
+  - [Cluster Deployment](./tkg/cluster-deployment.md)
+- #### Kubernetes Platform:
+  - [Storage Integration](./tkg/storage-integration.md)
+  - [Container Runtime](tkg/runtime.md)
+  - [Container Networking](tkg/container-networking.md)
+  - [Service Routing](tkg/service-routing.md)
+  - [Platform Lifecycle](tkg/platform-lifecycle.md)
+  - [Authentication](tkg/authentication.md)
+  - [Secret Management](tkg/secret-management.md)
+  - [Platform Observability](tkg/observability.md)
+  - [Backup & Recovery](/tkg/backup-recovery.md)
+  - [Authorization](tkg/authorization.md)
+- #### Application Platform
+  - [Backup & Recovery](/tkg/backup-recovery.md)
+  - [Workload Onboarding](tkg/workload-onboarding.md)
+  - [Authorization](tkg/authorization.md)
+  - [Workload Tenancy](tkg/workload-tenancy.md)
+  - [Application Observability](tkg/observability.md)
+  - [Automated Build and Deploy](tkg/automated-build-deploy.md)
 
 ### Tanzu Application Service (TAS) 
 - [Infrastructure & Networking](tas/infrastructure-networking.md) 
@@ -65,11 +63,10 @@ Click on each epic to see the backlog of user stories.
 - [Secret Management](tas/secret-management.md)
 - [Application Observability](tas/observability.md)
 - [Application Authentication](tas/application-authentication.md)
-- Application Onboarding
+- [Application Onboarding](tas/appliction-onboarding.md)
 - [Windows Workloads](tas/windows-workloads.md)
-- Developers Self-service
+- [Developers Self-service](tas/developers-self-service.md)
 - [Compliance & InfoSec](tas/security-compliance.md)
-- [Platform High Availability](#)
 
 
 ### Platform Governance / SRE / Day 2 Ops
