@@ -1,7 +1,7 @@
 Have applications be backed up and restored with a sane state 
 
 **As an Application Developer**  
-**I want** to have my application be backed up 
+**I want** to have my application be backed up  
 **So that** in case of a disaster, my application can be restored to a good state to minimize business impact
 
 L: backup & recovery
