@@ -7,7 +7,31 @@ The aspirations for this initiative are:
 - Expedite and automate the process of backlog creation for platform teams
 - Achieve consistency across VMware Tanzu Labs delivery teams, our partners and clients
 
-## Export user stories via Prolific
+## Prerequisites
+
+Install `jq` 
+```bash
+brew install jq
+```
+
+Install `go`
+```bash
+brew install go
+```
+
+Install [Prolific](https://github.com/onsi/prolific#installation) and [Prolific-Importer](https://github.com/sneal/prolific-importer#installation) via the Github releases tab, or with Go 1.16+:
+
+```bash
+go install github.com/onsi/prolific@latest
+go install github.com/sneal/prolific-importer@latest
+```
+## Convert user stories from an existing Pivotal Tracker backlog
+
+Use [this script](https://gitlab.eng.vmware.com/mjoey/platform-service-backlogs/-/blob/master/bin/project_clone.sh) to export your Tracker project to JSON. Once you have a JSON file, use [this other script](https://gitlab.eng.vmware.com/sneal/platform-service-backlogs/-/blob/master/bin/json_2_prolific.sh) to convert JSON to Markdown. 
+
+
+
+## Export user stories to Pivotal Tracker via Prolific
 
 The user stories in this repo are formatted in markdown and work with [Prolific](https://github.com/onsi/prolific). The Prolific tool converts each markdown to a to CSV file. The CVS file can be then imported into a Pivotal Tracker project via [Prolific-Importer](https://github.com/sneal/prolific-importer#installation)
 
