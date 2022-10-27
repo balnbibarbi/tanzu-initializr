@@ -1,7 +1,7 @@
 
 # Tanzu Initializr
 
-Tanzu Initializr is a library of canned backlogs for modern application platforms such as [TKO](), [TAP](https://tanzu.vmware.com/application-platform), and [TAS]()
+Tanzu Initializr is a library of canned backlogs for modern application platforms such as [TKG](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid), [TAP](https://tanzu.vmware.com/application-platform), and [TAS](https://tanzu.vmware.com/application-service).
 
 The aspirations for this initiative are:	
 - Expedite and automate the process of backlog creation for platform teams
