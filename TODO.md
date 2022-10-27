@@ -7,6 +7,7 @@ This script will create a new project and promots users to select from a list of
 - [ ] Pre-req check for `prolific` and `prolific-importer` 
 - [ ] Pre-req check for `go`
 - [ ] Show a numbered list of canned backlogs for user to select
+- [ ] Option to create a CSV file (skip `prolific-importer`)
 
 ### `clone_project.sh` script
 This script will create a new prolific file (markdown format) from a given a tracker project
