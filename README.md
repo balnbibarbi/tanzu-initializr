@@ -26,7 +26,7 @@ Install [Prolific](https://github.com/onsi/prolific#installation) and [Prolific-
   $ ./create_backlog.sh --new
 ```
 ### How the script works
-The user stories in this repo are formatted in markdown to work with [Prolific](https://github.com/onsi/prolific). The Prolific tool converts each markdown to a to CSV file. The CVS file are then imported into a Pivotal Tracker project via [Prolific-Importer](https://github.com/sneal/prolific-importer#installation).
+The user stories in this repo are formatted in markdown to work with [Prolific](https://github.com/onsi/prolific). The Prolific tool converts each markdown to a to CSV file. The CSV file are then imported into a Pivotal Tracker project via [Prolific-Importer](https://github.com/sneal/prolific-importer#installation).
 
 ```bash
   #Convert to CSV
