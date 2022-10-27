@@ -11,9 +11,7 @@ The aspirations for this initiative are:
 
 ```bash
   $ export TRACKER_TOKEN='<your-tracker-token>'
-
   $ cd bin/
-
   $ ./create_backlog.sh --new
 ```
 
