@@ -10,9 +10,9 @@ The aspirations for this initiative are:
 ## To create a new Tracker project and import a canned backlog 
 
 ```bash
+  # clone this repo
   $ export TRACKER_TOKEN='<your-tracker-token>'
-  $ cd bin/
-  $ ./create_backlog.sh --new
+  $ ./bin/create_backlog.sh --new
 ```
 
 ## Prerequisites
