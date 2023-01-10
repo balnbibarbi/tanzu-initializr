@@ -12,7 +12,7 @@ The aspirations for this initiative are:
 ```bash
   # clone this repo
   $ export TRACKER_TOKEN='<your-tracker-token>'
-  $ ./bin/create_backlog.sh --new
+  $ ./bin/create_project.sh --new
 ```
 
 ## Prerequisites
