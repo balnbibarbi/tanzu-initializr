@@ -76,9 +76,14 @@ function list_backlogs() {
   done
   read -p "Paste backlog name followed by a space: " -a MDFILES
 
+  # Create a temp file
+  TMPFILE=$(mktemp)
   for mdfile in ${MDFILES[@]}; do
-    add_stories "$mdfile" "$PID"
+    cat $mdfile >> $TMPFILE
   done
+
+  add_stories "$TMPFILE" "$PID"
+  rm $TMPFILE
 }
 
 while [[ $# -gt 0 ]]; do
