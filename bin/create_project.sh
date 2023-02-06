@@ -9,6 +9,56 @@ if [ -z $TRACKER_TOKEN ]; then
   exit;
 fi
 
+bindir=$(dirname $(readlink -f "$0"))
+
+gopath=$(go env|fgrep GOPATH|sed -r -e 's/^GOPATH="//g'|sed -r -e 's/"$//g')
+
+all_prolific_paths="\
+/usr/local/bin/prolific
+$HOME/go/bin/prolific
+${gopath}/bin/prolific
+"
+
+if type prolific >/dev/null 2>&1 ; then
+	true  # prolific found
+else
+	prolific=""
+	for prolific_path in $all_prolific_paths ; do
+		if test -x "$prolific_path" ; then
+			prolific="$prolific_path"
+			break
+		fi
+	done
+fi
+
+if test -z "$prolific" ; then
+	echo "Prolific not found (looked in $all_prolific_paths)" 1>&2
+	exit 1
+fi
+
+all_prolific_importer_paths="\
+/usr/local/bin/prolific-importer
+$HOME/go/bin/prolific-importer
+${gopath}/bin/prolific-importer
+"
+
+if type prolific-importer >/dev/null 2>&1 ; then
+	true  # prolific-importer found
+else
+	prolific_importer=""
+	for prolific_importer_path in $all_prolific_importer_paths ; do
+		if test -x "$prolific_importer_path" ; then
+			prolific_importer="$prolific_importer_path"
+			break
+		fi
+	done
+fi
+
+if test -z "$prolific_importer" ; then
+	echo "Prolific-importer not found (looked in $all_prolific_importer_paths)" 1>&2
+	exit 1
+fi
+
 function create_tracker() {
   
   local NAME=$1
@@ -56,21 +106,21 @@ function add_stories() {
 
   local story_file=$1
   local PID=$2
-  prolific $story_file | prolific-importer ${TRACKER_TOKEN} ${PID}
+  "$prolific_path" $story_file | prolific-importer ${TRACKER_TOKEN} ${PID}
 }
 
 function list_backlogs() {
 
   local PID=$1
 
-  for dir in $(ls -1 backlogs); do
+  for dir in $(ls -1 "${bindir}/../backlogs"); do
 
     # Skip directories called tas or sre (for now)
     if [ "$dir" == "tas" ] || [ $dir == 'sre' ]; then
       continue
     fi
 
-    for backlog in backlogs/$dir/*.md; do
+    for backlog in "${bindir}/../backlogs/$dir"/*.md; do
       echo "$backlog"
     done
   done
