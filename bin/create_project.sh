@@ -21,8 +21,8 @@ $HOME/go/bin/prolific
 ${gopath}/bin/prolific
 "
 
-if type prolific >/dev/null 2>&1 ; then
-	true  # prolific found
+if which prolific >/dev/null 2>&1 ; then
+	prolific=$(which prolific)
 else
 	prolific=""
 	for prolific_path in $all_prolific_paths ; do
@@ -44,8 +44,8 @@ $HOME/go/bin/prolific-importer
 ${gopath}/bin/prolific-importer
 "
 
-if type prolific-importer >/dev/null 2>&1 ; then
-	true  # prolific-importer found
+if which prolific-importer >/dev/null 2>&1 ; then
+	prolific_importer=$(which prolific_importer)
 else
 	prolific_importer=""
 	for prolific_importer_path in $all_prolific_importer_paths ; do
