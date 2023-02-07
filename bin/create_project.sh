@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # This script will create a new tracker backlog and import epics and stories based on user input.
 
 TRACKER_URL='https://www.pivotaltracker.com/services/v5'
@@ -106,10 +108,11 @@ function add_stories() {
 
   local story_file=$1
   local PID=$2
-  "${prolific}" $story_file | "${prolific_importer}" ${TRACKER_TOKEN} ${PID}
+  "${prolific}" $story_file | "${prolific_importer}" "${TRACKER_TOKEN}" "${PID}"
 }
 
 backlog_dir="${bindir}/../backlogs"
+categories=$(cd "${backlog_dir}" && ls -1)
 
 function list_backlogs() {
 
@@ -117,26 +120,36 @@ function list_backlogs() {
 
   echo "Here are the available backlog items:"
 
-  for dir in $(cd "${backlog_dir}" && ls -1); do
+  for dir in $categories; do
 
     # Skip directories called tas or sre (for now)
     if [ "$dir" == "tas" ] || [ $dir == 'sre' ]; then
       continue
     fi
 
+    echo "---------"
+    echo "Category: $dir"
+    echo "---------"
     (
       cd "${backlog_dir}"
       for backlog in "${dir}"/*.md; do
         echo "$backlog"
       done
     )
+    echo
   done
-  read -p "Please enter a list of the above backlog items, separated by spaces: " -a MDFILES
+  read -p "Please enter a list of the above categories and/or individual stories, separated by spaces: " -a MDFILES
 
   # Create a temp file
   TMPFILE=$(mktemp)
   for mdfile in ${MDFILES[@]}; do
-    cat "${backlog_dir}/${mdfile}" >> $TMPFILE
+    if test -d "${backlog_dir}/${mdfile}" ; then
+      for backlog in "${backlog_dir}/${mdfile}"/*.md ; do
+        cat "${backlog}" >> $TMPFILE
+      done
+    else
+      cat "${backlog_dir}/${mdfile}" >> $TMPFILE
+    fi
   done
 
   add_stories "$TMPFILE" "$PID"
