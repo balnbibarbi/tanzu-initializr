@@ -106,30 +106,35 @@ function add_stories() {
 
   local story_file=$1
   local PID=$2
-  "$prolific_path" $story_file | prolific-importer ${TRACKER_TOKEN} ${PID}
+  "${prolific}" $story_file | "${prolific_importer}" ${TRACKER_TOKEN} ${PID}
 }
+
+backlog_dir="${bindir}/../backlogs"
 
 function list_backlogs() {
 
   local PID=$1
 
-  for dir in $(ls -1 "${bindir}/../backlogs"); do
+  for dir in $(cd "${backlog_dir}" && ls -1); do
 
     # Skip directories called tas or sre (for now)
     if [ "$dir" == "tas" ] || [ $dir == 'sre' ]; then
       continue
     fi
 
-    for backlog in "${bindir}/../backlogs/$dir"/*.md; do
-      echo "$backlog"
-    done
+    (
+      cd "${backlog_dir}"
+      for backlog in "${dir}"/*.md; do
+        echo "$backlog"
+      done
+    )
   done
   read -p "Paste backlog name followed by a space: " -a MDFILES
 
   # Create a temp file
   TMPFILE=$(mktemp)
   for mdfile in ${MDFILES[@]}; do
-    cat $mdfile >> $TMPFILE
+    cat "${backlog_dir}/${mdfile}" >> $TMPFILE
   done
 
   add_stories "$TMPFILE" "$PID"
