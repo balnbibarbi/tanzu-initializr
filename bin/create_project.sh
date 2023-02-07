@@ -115,6 +115,8 @@ function list_backlogs() {
 
   local PID=$1
 
+  echo "Here are the available backlog items:"
+
   for dir in $(cd "${backlog_dir}" && ls -1); do
 
     # Skip directories called tas or sre (for now)
@@ -129,7 +131,7 @@ function list_backlogs() {
       done
     )
   done
-  read -p "Paste backlog name followed by a space: " -a MDFILES
+  read -p "Please enter a list of the above backlog items, separated by spaces: " -a MDFILES
 
   # Create a temp file
   TMPFILE=$(mktemp)
