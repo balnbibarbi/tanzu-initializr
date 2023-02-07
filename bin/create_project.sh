@@ -72,7 +72,7 @@ function create_tracker() {
 
   id=$(echo $new_project |jq -r '.id')
 
-  # Make sure we got a PID back.
+  # Make sure we got a project ID back.
   echo $id | grep -Eq '^[0-9]{7}$'
   if [ $? -ne 0 ]; then
     echo "$new_project" | jq > error.log
@@ -98,17 +98,17 @@ function new_tracker() {
   read -p 'New Tracker project name: ' TRACKER_NAME
   # Replace any spaces with a dash for the project name.
   TRACKER_NAME=${TRACKER_NAME// /-}
-  local PID=$(create_tracker "$TRACKER_NAME")
-  >&2 echo "Created new project https://www.pivotaltracker.com/n/projects/$PID"
+  local PROJECT_ID=$(create_tracker "$TRACKER_NAME")
+  >&2 echo "Created new project https://www.pivotaltracker.com/n/projects/$PROJECT_ID"
   sleep 3
-  echo "$PID"
+  echo "$PROJECT_ID"
 }
 
 function add_stories() {
 
   local story_file=$1
-  local PID=$2
-  "${prolific}" $story_file | "${prolific_importer}" "${TRACKER_TOKEN}" "${PID}"
+  local PROJECT_ID=$2
+  "${prolific}" $story_file | "${prolific_importer}" "${TRACKER_TOKEN}" "${PROJECT_ID}"
 }
 
 backlog_dir="${bindir}/../backlogs"
@@ -116,7 +116,7 @@ categories=$(cd "${backlog_dir}" && ls -1)
 
 function list_backlogs() {
 
-  local PID=$1
+  local PROJECT_ID=$1
 
   echo "Here are the available backlog items:"
 
@@ -152,7 +152,7 @@ function list_backlogs() {
     fi
   done
 
-  add_stories "$TMPFILE" "$PID"
+  add_stories "$TMPFILE" "$PROJECT_ID"
   rm $TMPFILE
 }
 
@@ -169,8 +169,8 @@ done
 
 if [ ! -z "$NEW" ]; then
   # Create a new project
-  PID=$(new_tracker)
-  list_backlogs $PID
+  PROJECT_ID=$(new_tracker)
+  list_backlogs $PROJECT_ID
 else
   usage
 fi
