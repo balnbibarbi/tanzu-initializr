@@ -6,9 +6,11 @@ set -e
 
 TRACKER_URL='https://www.pivotaltracker.com/services/v5'
 
-if [ -z $TRACKER_TOKEN ]; then
-  echo "Please export TRACKER_TOKEN"
-  exit;
+if [ -z "${TRACKER_TOKEN}" ]; then
+  echo "Please generate a tracker token using the instructions in the readme, then:"
+  echo "export TRACKER_TOKEN=<paste-tracker-token-here>"
+  echo "then re-run this script."
+  exit
 fi
 
 bindir=$(dirname $(readlink -f "$0"))
@@ -100,7 +102,8 @@ function new_tracker() {
   TRACKER_NAME=${TRACKER_NAME// /-}
   local PROJECT_ID=$(create_tracker "$TRACKER_NAME")
   >&2 echo "Created new project https://www.pivotaltracker.com/n/projects/$PROJECT_ID"
-  sleep 3
+  sleep 3 # FIXME: What is this here for? Is this a workaround for a PT race?
+  # This costs three seconds of the user's time each time they use this tool :-(
   echo "$PROJECT_ID"
 }
 

@@ -7,6 +7,10 @@ The aspirations for this initiative are:
 - Expedite and automate the process of backlog creation for platform teams
 - Achieve consistency across VMware Tanzu Labs delivery teams, partners and Tanzu customers
 
+## To create a Pivotal Tracker API token
+
+Follow instructions at: https://www.pivotaltracker.com/help/articles/api_token/
+
 ## To create a new Tracker project and import a canned backlog 
 
 ```bash
