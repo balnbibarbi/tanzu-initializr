@@ -90,13 +90,13 @@ function usage() {
 
   echo
   echo "$0: 
+    --help      Show help
     --new       Create a new Tracker"
   echo
   exit 0
 }
 
 function new_tracker() {
-
   read -p 'New Tracker project name: ' TRACKER_NAME
   # Replace any spaces with a dash for the project name.
   TRACKER_NAME=${TRACKER_NAME// /-}
@@ -165,17 +165,25 @@ while [[ $# -gt 0 ]]; do
   case $key in
       -n|--new)
         NEW='yes'
-        shift 
+        shift
+      ;;
+      -h|--help)
+        HELP='yes'
+        shift
       ;;
   esac
 done
 
+if [ ! -z "$HELP" ]; then
+  usage
+  exit 0
+fi
+
 if [ ! -z "$NEW" ]; then
   # Create a new project
   PROJECT_ID=$(new_tracker)
-  list_backlogs $PROJECT_ID
 else
-  usage
+  read -p 'Existing tracker ID (empty for none): ' PROJECT_ID
 fi
 
-
+list_backlogs $PROJECT_ID
